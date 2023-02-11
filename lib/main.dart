@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:homecare_nurse/screens/payment_screen.dart';
+import '../../screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +15,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+          centerTitle: true,
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
+        ),
+        scaffoldBackgroundColor: Color(0xFFE3F3DF),
       ),
-      home: Container(),
+      debugShowCheckedModeBanner: false,
+      home: const PaymentScreen(),
     );
   }
 }

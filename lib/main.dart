@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:homecare_nurse/screens/payment_screen.dart';
+//import 'package:homecare_nurse/screens/payment_screen.dart';
 import '../../screens/home_screen.dart';
 
 void main() {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFFE3F3DF),
       ),
       debugShowCheckedModeBanner: false,
-      home: const PaymentScreen(),
+      home: const HomeScreen(),
     );
   }
 }
